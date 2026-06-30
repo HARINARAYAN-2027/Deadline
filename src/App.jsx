@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
 import { TaskProvider } from './context/TaskContext';
 import Loader from './components/Loader';
-import NotificationManager from './components/Notification'; // Sahi notification component path mapped
+import NotificationManager from './components/Notification';
 
 function App() {
   const [isBooting, setIsBooting] = useState(true);
