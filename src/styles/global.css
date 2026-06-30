@@ -1,0 +1,131 @@
+/* src/styles/global.css */
+
+/* Premium Glassmorphism Card */
+.glass-card {
+  background: linear-gradient(135deg, rgba(31, 25, 70, 0.6) 0%, rgba(30, 20, 60, 0.4) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: linear-gradient(135deg, rgba(31, 25, 70, 0.8) 0%, rgba(30, 20, 60, 0.6) 100%);
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 20px 48px rgba(124, 58, 237, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Premium Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 50%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 6s ease infinite;
+}
+
+/* Soft Pulse Animation */
+@keyframes softPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(0.98);
+  }
+}
+
+.ai-card-glow {
+  animation: softPulse 4s infinite ease-in-out;
+}
+
+/* Smooth Glow Effect */
+.glow-effect {
+  position: relative;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.5);
+}
+
+/* Premium Button Base */
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 45px rgba(124, 58, 237, 0.4);
+}
+
+.btn-premium:active {
+  transform: translateY(0);
+}
+
+/* Smooth Border Animation */
+.border-gradient {
+  position: relative;
+  background: linear-gradient(135deg, rgba(31, 25, 70, 0.4) 0%, rgba(30, 20, 60, 0.2) 100%);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(135deg, #7C3AED, #EC4899, #06B6D4) 1;
+}
+
+/* Custom selection */
+::selection {
+  background: linear-gradient(135deg, #7C3AED, #EC4899);
+  color: #FFFFFF;
+}
+
+/* Smooth Scroll Behavior */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Floating Animation */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Shimmer Loading Effect */
+@keyframes shimmerLoading {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-loading {
+  background: linear-gradient(90deg, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 75%);
+  background-size: 1000px 100%;
+  animation: shimmerLoading 2s infinite;
+}
+
+/* Base layout adjustments */
+.bg-deep-dark {
+  background: linear-gradient(135deg, #0F0F1E 0%, #16213E 100%);
+}
+
+.bg-card-dark {
+  background: linear-gradient(135deg, rgba(22, 33, 62, 0.5) 0%, rgba(30, 20, 60, 0.3) 100%);
+  backdrop-filter: blur(5px);
+}
