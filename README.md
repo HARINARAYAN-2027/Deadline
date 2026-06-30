@@ -30,22 +30,22 @@ An autonomous, AI-driven productivity ecosystem engineered to transition from pa
   "todayTasks": [],
   "upcomingDeadlines": []
 }
-
-*****🕒 Background Telemetry & Notifications
+```
+#### 🕒 Background Telemetry & Notifications
 Continuous Loop Evaluation: Active polling loops via client-side NotificationManager tracking synchronized time deltas.
 
 Precision Notification Trigger: Desktop native Web Notifications API fired strictly on the exact 5-minute countdown boundary window using automated time-window tolerance matrices and deduplication guards to prevent repeating alert spam.
 
 Smart Re-Notification Worker: Detects overdue, uncompleted high-priority tasks past their deadline and loops back aggressive reminder prompts every 60 seconds until resolved.
 
-🎙️ Key Innovations Highlight
+ ##### 🎙️ Key Innovations Highlight
 1. Natural Language Shorthand Input (Bypass Flow)
 Instead of searching for tiny click checkboxes, type the keyword of the task followed by done directly into the input bar (e.g., "build done"). The state layer triggers a substring evaluation query across active items, maps the status update, and cleans the view instantly.
 
 2. Multi-Modal Audio Extraction
 Integrated browser-native Web Audio API recording layers (VoiceRecorder) to capture live human dictation, transmitting structured streams directly to our NLP architecture for hands-free timeline parsing.
 
-📁 Repository Structure
+ ###### 📁 Repository Structure
 Plaintext
 .
 ├─ package.json
