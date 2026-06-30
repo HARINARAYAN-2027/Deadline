@@ -6,7 +6,7 @@ const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
 const envModel = import.meta.env.VITE_GEMINI_MODEL?.trim();
 const envModelCandidates = import.meta.env.VITE_GEMINI_MODEL_CANDIDATES?.split(',').map((item) => item.trim()).filter(Boolean);
 
-// FIXED: Sahi aur currently supported stable models ka array set kiya hai
+// currently supported stable models ka array set 
 const DEFAULT_MODEL_CANDIDATES = [
   'gemini-2.5-flash',
   'gemini-1.5-flash'
@@ -133,7 +133,7 @@ export const generateAutonomousPlan = async (userCrisisText) => {
             };
           }
 
-          // FIXED: Agar model 404 (Not Found) maar raha hai, toh usi waqt retry loop tod kar agle available model par switch karo
+          
           if (isModelNotFoundError(err)) {
             break; 
           }
