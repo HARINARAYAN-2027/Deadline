@@ -1,6 +1,6 @@
 // src/utils/formatter.js
 
-// Seconds ko 00:00 configuration counter strings me parse karne ke liye
+// Seconds ko 00:00 configuration counter strings
 export const formatPomodoroTime = (totalSeconds) => {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
