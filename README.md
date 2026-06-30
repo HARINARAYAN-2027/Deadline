@@ -1,4 +1,17 @@
-# 📂 Project Structure
+# DeadlineAI - Autonomous Productivity Ecosystem
+
+DeadlineAI is an advanced, autonomous AI-driven productivity ecosystem engineered to transform unorganized daily schedules into structured, high-efficiency operational execution timelines. Built using React, Vite, and Tailwind CSS, the platform leverages the Google Gemini API to offer real-time natural language processing (NLP) and contextual data parsing.
+
+## 🚀 Key Core Architectural Features:
+
+1. **Autonomous AI Planner:** Converts raw, chaotic textual or voice inputs into precise, multi-layered calendar grids and task execution timelines with dynamically calculated productivity and risk metrics.
+2. **Real-Time Telemetry & Notification Engine:** Features an automated background scheduler that matches system time against extracted task deadlines. Built via the native Web Notifications API, the system is fully operational and verified in local development environments (localhost) to push instant desktop alert sheets when a task boundary condition is met. *(Note: Production server push sync requires localized HTTPS service worker lifecycle stabilization).*
+3. **Smart Command Shorthand Override:** Enables users to instantly manage and filter active pipelines via direct shorthand keyword inputs (e.g., 'hotfix done'), ensuring seamless UI performance and immediate cleanup of operational items.
+4. **Fail-Safe Execution Fallbacks:** Integrates custom local storage persistence layers to ensure zero data-loss states across continuous browser sessions.
+5. **Secure Authentication Matrix:** Implements fully integrated Firebase Google Authentication whitelisted over secure production server contexts.
+
+---
+### 📂 Project Structure
 
 ```text
 Deadline/
@@ -99,7 +112,7 @@ Deadline/
 
 # 🚀 Installation & Local Setup
 
-## 1️⃣ Clone the Repository
+#### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/HARINARAYAN-2027/Deadline.git
