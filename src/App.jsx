@@ -1,6 +1,7 @@
 // src/App.jsx
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import AppRoutes from './routes/AppRoutes';
 import { TaskProvider } from './context/TaskContext';
 import Loader from './components/Loader';
@@ -28,6 +29,7 @@ function App() {
           <AppRoutes />
         </div>
       </TaskProvider>
+      <SpeedInsights />
     </Router>
   );
 }
